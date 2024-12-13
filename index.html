@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Specials</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Our Restaurant</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tiles">
+        <div class="tile">
+          <a href="#" onclick="$dc.loadMenuItems('M');">Menu</a>
+        </div>
+        <div class="tile">
+          <a href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}});">Specials</a>
+        </div>
+        <div class="tile">
+          <a href="#">Map</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Inc. All rights reserved.</p>
+      </footer>
+    </div>
+  
+    <script src="/script.js"></script>
+  </body>
+  </html>
+  
